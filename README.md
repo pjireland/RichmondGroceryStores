@@ -47,7 +47,7 @@ filename `distance_to_stores.html`.
 pip install googlemaps
 ```
 
-   It is used to geocode (obtain the latitude and longitude) of police incidents.
+   It is used to geocode (obtain the latitude and longitude) of grocery stores.
 
 3. Sign up for a [Google Maps API key](https://developers.google.com/maps/documentation/javascript/get-api-key).
 
@@ -60,25 +60,11 @@ pip install googlemaps
 2. Add/modify grocery store data in the file `./data/grocery_stores.csv`.
     * The name, address, name of downloaded logo image, and desired width and height (in pixels) of the logo image should be added/modified.
 3. Geocode the addresses
-    * Export your Google Maps API key to the environment variable `API_KEY`.  On Linux and Mac machines, this can be done through the command
-
-```
-export API_KEY=yourAPIkey
-```
-
-    * Run the command below from the top level of the cloned repo to geocode each address in `./data/grocery_stores.csv`
-
-```
-python scripts/geocode_addresses.py
-```
-
+    * Export your Google Maps API key to the environment variable `API_KEY`.  On Linux and Mac machines, this can be done through the command `export API_KEY=yourAPIkey`.
+    * Run `python scripts/geocode_addresses.py` from the top level of the cloned repo to geocode each address in `./data/grocery_stores.csv`.
 4. Map the distance to the grocery stores
 
     * If desired, the variables near the top of the `./scripts/map_distance_to_stores.py` file can be modified to alter how the maps are drawn.
-    * The following command should then be run in the top level of the cloned repository:
-
-```
-python scripts/map_distance_to_stores.py
-```
+    * The command `python scripts/map_distance_to_stores.py` should then be run in the top level of the cloned repository:
 
     * The resulting map will be placed within the `results` directory under the filename `distance_to_stores.html`.
