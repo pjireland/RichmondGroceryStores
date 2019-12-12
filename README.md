@@ -15,7 +15,7 @@ None
 
 ### Approach
 
-The exisiting data can be viewed online here:
+The exisiting data can be viewed online here: [https://pjireland.github.io/distance_to_stores.html](https://pjireland.github.io/distance_to_stores.html)
 
 ## Level 2: Regenerate the data
 
@@ -65,6 +65,6 @@ pip install googlemaps
 4. Map the distance to the grocery stores
 
     * If desired, the variables near the top of the `./scripts/map_distance_to_stores.py` file can be modified to alter how the maps are drawn.
-    * The command `python scripts/map_distance_to_stores.py` should then be run in the top level of the cloned repository:
+    * The command `python scripts/map_distance_to_stores.py` should then be run in the top level of the cloned repository.
 
     * The resulting map will be placed within the `results` directory under the filename `distance_to_stores.html`.
