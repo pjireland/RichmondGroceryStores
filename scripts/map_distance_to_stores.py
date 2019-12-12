@@ -30,7 +30,7 @@ minval = 0.0
 maxval = 3.0
 
 # Number of grids to use in each direction
-ngrid = 50
+ngrid = 100
 
 # Colors in colormap
 ncolor = 12
